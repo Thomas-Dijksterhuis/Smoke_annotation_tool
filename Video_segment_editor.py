@@ -2181,12 +2181,13 @@ class VideoSegmentEditor:
         sortedAnnotations.sort(key=lambda x: x[0])
         
         # Display enhanced header with statistics
-        header = f"Annotation History: {self.videoName}\n"
+        header = "Instructions:\n"
+        header += "  • Click any frame range below to jump to that segment\n\n"
+        header += f"Annotations in this video: {len(sortedAnnotations)}\n"
         header += "=" * 59 + "\n\n"
         
         # Add instructions
-        header += "Instructions:\n"
-        header += "  • Click any frame range below to jump to that segment\n\n"
+
         self.historyText.insert(tk.END, header)
         
         if not sortedAnnotations:
