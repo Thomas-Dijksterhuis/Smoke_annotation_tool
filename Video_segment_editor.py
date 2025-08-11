@@ -1156,7 +1156,6 @@ class VideoSegmentEditor:
             annotationText += (f"Smoke: {smokeTrain:,}  |  No smoke: {noSmokeTrain:,}\n")
             annotationText += (f"Validation dataset:\n")
             annotationText += (f"Smoke: {smokeVal:,}  |  No smoke: {noSmokeVal:,}\n")
-            annotationText += (f"Annotations in this video: {annotationsPerVideo:,}")
             
         # Right panel labels (if they exist)
         if hasattr(self, 'segmentInfoLabel'):
